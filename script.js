@@ -116,6 +116,12 @@ function limparFormulario() {
     document.getElementById("phone").value = "";
     document.getElementById("cellphone").value = "";
     document.getElementById("photo").value = "";
+    document.getElementById("birthdate").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("cep").value = "";
+    document.getElementById("city").value = "";
+    document.getElementById("insta").value = "";
+    document.getElementById("github").value = "";
 
 }
 
@@ -148,20 +154,6 @@ function isURLValida(url) {
     } else {
         return false;
     }
-}
-
-function clearInputs() {
-    document.getElementById("fullname").value = "";
-    document.getElementById("phone").value = "";
-    document.getElementById("cellphone").value = "";
-    document.getElementById("photo").value = "";
-    document.getElementById("birthdate").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("cep").value = "";
-    document.getElementById("city").value = "";
-    document.getElementById("insta").value = "";
-    document.getElementById("github").value = "";
-
 }
 
 function sendMSG(msg, type) {
