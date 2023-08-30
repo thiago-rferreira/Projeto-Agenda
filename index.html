@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Agenda Telefônica</title>
+</head>
+<body>
+    <div id="container-main">
+        <div id="container1">
+            
+            <div id="contact-form">
+                <h1>Agenda Telefônica</h1>
+                <input type="text" id="fullname" placeholder="Nome Completo">
+                <input type="text" id="phone" placeholder="Telefone Fixo" maxlength="11">
+                <input type="text" id="cellphone" placeholder="Telefone Celular" maxlength="11">
+                <input type="text" id="photo" placeholder="URL da Foto">
+                <input type="date" id="birthdate" placeholder="Data de Nascimento">
+                <input type="text" id="email" placeholder="E-mail">
+                <input type="text" id="cep" placeholder="CEP">
+                <input type="text" id="city" placeholder="Cidade">
+                <input type="text" id="insta" placeholder="@Instagram">
+                <input type="text" id="github" placeholder="@Github">
+                <button onclick="adicionarContato()" id="add-contact">Adicionar Contato</button>
+                <p id="msg"></p>
+            </div>
+            
+            <div id="contact-list">
+                <!-- Aqui serão exibidos os contatos -->
+            </div>
+        </div>
+        <div id="container-detail">
+            <p>Detalhe</p>
+            <div id="recebeContato"></div>
+        </div>
+    </div>
+
+</body>
+</html>
