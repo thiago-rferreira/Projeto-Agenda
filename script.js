@@ -131,8 +131,8 @@ function exibirContatos() {
         <img src="${contato.photo}" alt="${contato.fullname}">
             <div class="div-info-contact">
                 <h3>${contato.fullname}</h3>
-            <p>Telefone Fixo: ${contato.phone}</p>
-            <p>Telefone Celular: ${contato.cellphone}</p>
+            <p>Telefone Fixo: ${formateCelular(contato.phone)}</p>
+            <p>Telefone Celular: ${formateCelular(contato.cellphone)}</p>
             </div>
         </div>
     `;
@@ -161,7 +161,7 @@ function clearInputs() {
     document.getElementById("city").value = "";
     document.getElementById("insta").value = "";
     document.getElementById("github").value = "";
-    
+
 }
 
 function sendMSG(msg, type) {
